@@ -39,8 +39,9 @@ const updaterate = async()=>{
     let response = await fetch(URL);
     let data = await response.json();
     let rate = data[fromcurr.value.toLowerCase()][tocurr.value.toLowerCase()]; // Get base currency object
-    console.log(rate);
+    rate = Number(rate.toFixed(2));
     let finalamount = amtvalue * rate;
+    finalamount = Number(finalamount.toFixed(2)).toLocaleString();
     msg.innerText = `${amtvalue} ${fromcurr.value} = ${finalamount} ${tocurr.value}`;
 }
 btn.addEventListener("click", (evt) => {
