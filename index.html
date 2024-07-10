@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+    />
+  </head>
+  <body>
+    <div class="currencybox">
+      <h1>Currenct Converter</h1>
+      <form action="submit">
+        <p>Enter Amount</p>
+        <input placeholder="100" class="amount" type="text" />
+        <div class="selector">
+          <div class="from">
+            <div class="options">
+              <img src="https://flagsapi.com/US/flat/64.png" alt="" />
+              <select name="from">
+                <option value="USD" selected>USD</option>
+              </select>
+            </div>
+          </div>
+          <div class="icon">
+            <i class="fas fa-exchange-alt"></i>
+          </div>
+          <div class="to">
+            <div class="options">
+              <img src="https://flagsapi.com/PK/flat/64.png" alt="" />
+              <select name="to">
+                <option value="PKR" selected>PKR</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="msg">1USD = 278.55PKR</div>
+        <button>Get Exchange Rate</button>
+      </form>
+    </div>
+
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.1.1/js/all.js"
+    ></script>
+    <script src="./codes.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
