@@ -90,3 +90,12 @@ form button{
 form button:hover{
     opacity: 0.9;
 }
+@media only screen and (max-width: 400px){
+    .currencybox{
+        background-color: #fff8f0;
+        padding: 2rem;
+        width: 100%;
+        border-radius: 25px;
+        box-shadow: 2px 0px 12px 2px #d7d7d7;
+    }
+}
